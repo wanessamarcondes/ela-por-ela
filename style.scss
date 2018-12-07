@@ -11,6 +11,10 @@
         color: inherit;
     }
 
+    .nav, .section_title, .section_content, .nav-secondary {
+        color: #4c0812;
+    }
+
     .title__montserrat {
         font-family: "Montserrat", sans-serif;
         text-transform: uppercase;
@@ -107,7 +111,7 @@
             padding-bottom: 5px;
         }
         &_subheading {
-            font-size: 2rem;
+            font-size: 1.8rem;
             padding-top: 20px;
         }
         &_content {
@@ -127,13 +131,49 @@
     }
 
     .episode {
-        padding: 10px 0;
-        &_details {
-            &__hq {
-                background-color: #fff7f4;
-                padding: 20px 0;
+        background-color: #ffa987;
+        &_frame {
+            padding: 20px 0;
+            &__content {
+                padding-right: 25px;
+            }
+            &__details {
+                opacity: 0.5;
             }
         }
+        &_hq {
+            padding: 20px 0;
+            .hq_subtitle, .hq_cover {
+                background-color: #d14327;
+            }
+            .hq_subtitle {
+                display: flex;
+                align-items: flex-end;
+                height: 352px;
+                &__content {
+                    color: #fff7f4;
+                    opacity: 0.5;
+                }
+            }
+        }
+    }
+
+    .link_texto {
+        font-size: 1.8rem;
+        text-decoration: underline;
+    }
+
+    .img-participe {
+        background-color: #ed927d;
+    }
+
+    .img-colabore {
+        background-color: #fff5c6;
+    }
+
+    .link_hq {
+        font-size: 1.5rem;
+        text-decoration: underline;
     }
 
     .hide {
@@ -176,6 +216,11 @@
     .author {
         background-color: #fff7f4;
         padding: 20px 0;
+        &_subtitle {
+            &__content {
+                opacity: 0.75;
+            }
+        }
     }
 
     .hq, .author, .colaborate {
@@ -203,7 +248,6 @@
 .footer {
     background-color: #240409;
     color: #ffa987;
-    text-align: center;
     &_content {
         opacity: 0.4;
         &__link {
@@ -232,7 +276,6 @@
     
     &_copyright {
         background-color: #19080b;
-        text-align: center;
         color: rgba($color: #ed6142, $alpha: 0.75);
     }
 }
